@@ -44,7 +44,7 @@ Instead of treating the machine learning model as a "black box," SentimentLens i
 | Layer | Tools |
 | :--- | :--- |
 | **Frontend & UI** | Streamlit, HTML5, Custom CSS |
-| **Machine Learning** | Scikit-Learn (LogisticRegression), NumPy, Joblib |
+| **Machine Learning** | Scikit-Learn (TfidfVectorizer, LogisticRegression), NumPy, Joblib |
 | **Data Processing** | Pandas, NLTK (Tokenization, Stopwords, Porter Stemming) |
 | **Visualizations** | Plotly Express |
 | **Testing & Linter** | PyTest, Flake8 |
