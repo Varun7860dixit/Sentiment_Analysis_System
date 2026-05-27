@@ -1,4 +1,9 @@
 # 🔮 SentimentLens: Advanced Sentiment Analytics & Explanation Engine
+
+[![SentimentLens NLP CI/CD](https://github.com/Varun7860dixit/Sentiment_Analysis_System/actions/workflows/ci-cd.yml/badge.svg)](https://github.com/Varun7860dixit/Sentiment_Analysis_System/actions)
+[![Docker Image Version](https://img.shields.io/badge/docker-python%3A3.11--slim-blue)](https://hub.docker.com/r/varun7860dixit/sentiment-analysis-system)
+[![Streamlit App](https://static.streamlit.io/badge_gradient.svg)](https://streamlit.io/)
+
 SentimentLens NLP CI/CD Docker Streamlit App
 
 SentimentLens is a production-ready, resume-grade Natural Language Processing (NLP) web application built to classify movie review sentiments (Positive/Negative) and deliver interactive, real-time predictions through a clean clinical UI.
