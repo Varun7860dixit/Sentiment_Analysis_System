@@ -54,34 +54,35 @@ Instead of treating the machine learning model as a "black box," SentimentLens i
 
 ## 📐 Architecture & Workflow
 
+```mermaid
+flowchart TD
+    subgraph Data Layer
+        A[Kaggle/GitHub IMDB CSV] --> B[Data Preprocessing]
+    end
+    
+    subgraph Training Pipeline
+        B --> C[Text Cleaning & Porter Stemming]
+        C --> D[TF-IDF Vectorizer]
+        D --> E[Logistic Regression Fit]
+        E --> F[Serialize Artifacts: .pkl]
+    end
+    
+    subgraph Streamlit Interface
+        G[User Input / CSV Upload] --> H[Inference Engine]
+        F --> H
+        H --> I[Predict Probability]
+        H --> J[Compute Word Coefficients]
+        I --> K[Render Metrics & Visual Plots]
+        J --> L[Highlight Text & Render Tag Clouds]
+    end
+    
+    subgraph Containerization & DevOps
+        M[Dockerfile] --> N[GitHub Actions Workflow]
+        N --> O[Run Lints & Pytest]
+        N --> P[Verify Docker Build]
+    end
 ```
-Dataset (IMDB/Synthetic Reviews)
-       ↓
-Data Preprocessing
-(HTML Tag Removal → Non-alphabetic Cleaning → Porter Stemming)
-       ↓
-Feature Extraction
-(TfidfVectorizer — vocab mapping)
-       ↓
-Logistic Regression
-(train_test_split → model.fit → model.predict)
-       ↓
-Model Persistence
-(joblib.dump → models/sentiment_model.pkl)
-       ↓
-Streamlit Web Application
-(User Input/CSV → Inference → Feature Attribution)
-       ↓
-GitHub Repository
-       ↓
-GitHub Actions CI/CD
-(Checkout → Install Deps → Run Lints → Run PyTest → Verify Docker)
-       ↓
-Docker Containerization
-(Build Image → Run Container → Serve on :8501)
-       ↓
-Streamlit Cloud Deployment
-```
+
 
 ---
 
