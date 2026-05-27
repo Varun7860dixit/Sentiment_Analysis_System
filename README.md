@@ -1,8 +1,10 @@
 # 🔮 SentimentLens: Advanced Sentiment Analytics & Explanation Engine
 
-[![SentimentLens NLP CI/CD](https://github.com/Varun7860dixit/Sentiment_Analysis_System/actions/workflows/ci-cd.yml/badge.svg)](https://github.com/Varun7860dixit/Sentiment_Analysis_System/actions)
-[![Docker Image Version](https://img.shields.io/badge/docker-python%3A3.11--slim-blue)](https://hub.docker.com/r/varun7860dixit/sentiment-analysis-system)
-[![Streamlit App](https://static.streamlit.io/badge_gradient.svg)](https://streamlit.io/)
+[![ML - Sentiment Analysis](https://img.shields.io/badge/ML-Sentiment%20Analysis-red)](https://github.com/Varun7860dixit/Sentiment_Analysis_System)
+[![CI/CD - GitHub Actions](https://img.shields.io/badge/CI%2FCD-GitHub%20Actions-brightgreen)](https://github.com/Varun7860dixit/Sentiment_Analysis_System/actions)
+[![Docker - Containerized](https://img.shields.io/badge/Docker-Containerized-blue)](https://github.com/Varun7860dixit/Sentiment_Analysis_System)
+[![Streamlit - Live App](https://img.shields.io/badge/Streamlit-Live%20App-red)](https://streamlit.io/)
+
 
 SentimentLens NLP CI/CD Docker Streamlit App
 
